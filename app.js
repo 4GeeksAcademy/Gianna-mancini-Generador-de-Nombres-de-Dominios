@@ -12,3 +12,15 @@ function generateDomainName(pronoun, adj, noun) {
     }
 } 
 generateDomainName(p, a, n);
+
+function generateDomainName2(pronoun, adj, noun) {
+    pronoun.forEach(pElement => {
+        adj.forEach(aElement => {
+            noun.forEach(nElement => {
+                console.log(`${pElement}${aElement}${nElement}.com`);
+            });
+        });
+    });
+}
+
+generateDomainName2(p, a, n);
